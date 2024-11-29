@@ -1,0 +1,19 @@
+{
+  "routes": [
+    //{ "src": "/htstr/(.*)", "dest": "/api/htstr/manifest.php" },
+    { "src": "/(.*)", "dest": "/api/$1" },
+    { "handle": "filesystem" }, 
+    { "src": "/(.*)", "status": 404, "dest": "/Errors/404.html" },
+    { "src": "/(.*)", "status": 403, "dest": "/Errors/403.html" }
+  ],
+  
+  "functions": {
+    "api/**/*": {
+      "runtime": "vercel-php@0.7.3",
+      "maxDuration": 60
+     }
+  },
+  
+  //"regions": ["syd1"]
+  
+}
