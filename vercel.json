@@ -1,6 +1,5 @@
 {
   "routes": [
-    //{ "src": "/htstr/(.*)", "dest": "/api/htstr/manifest.php" },
     { "src": "/(.*)", "dest": "/api/$1" },
     { "handle": "filesystem" }, 
     { "src": "/(.*)", "status": 404, "dest": "/Errors/404.html" },
@@ -14,6 +13,6 @@
      }
   },
   
-  //"regions": ["syd1"]
+  "regions": ["sfo1"]
   
 }
