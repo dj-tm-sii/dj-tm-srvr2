@@ -1,5 +1,6 @@
 {
   "routes": [
+    { "src": "/7plus/(.*)", "dest": "/api/7plus/master.php" },
     { "src": "/(.*)", "dest": "/api/$1" },
     { "handle": "filesystem" }, 
     { "src": "/(.*)", "status": 404, "dest": "/Errors/404.html" },
