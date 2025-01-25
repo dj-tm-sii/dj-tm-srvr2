@@ -139,7 +139,7 @@ $url = crypt2($data, "DEC", "ML");
 
 $lstslg = explode("/", explode("?", $uri)[0])[count(explode("/", explode("?", $uri)[0])) - 1];
 
-if(strpos($tg == "@links_macha_official" && $creator == "@DJ-TM" && !empty($lang) && !empty($vrnt) && !empty($data) && !empty($url) && $url !== "INVALID" && preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$url) && explode(".", $lstslg)[1] == "m3u8"){
+if($tg == "@links_macha_official" && $creator == "@DJ-TM" && !empty($lang) && !empty($vrnt) && !empty($data) && !empty($url) && $url !== "INVALID" && preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$url) && explode(".", $lstslg)[1] == "m3u8"){
 
 if($vrnt == "androidv1"){
 
