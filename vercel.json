@@ -1,5 +1,6 @@
 {
   "routes": [
+    { "src": "/htstr/(.*)", "dest": "/api/htstr/master.m3u8.php" },
     { "src": "/icctv/(.*)", "dest": "/api/icctv/icctv.php" },
     { "src": "/ilt20/(.*)", "dest": "/api/ilt20/master.php" },
     { "src": "/(.*)", "dest": "/api/$1" },
