@@ -2,6 +2,7 @@
   "routes": [
     { "src": "/icctv/(.*)", "dest": "/api/icctv/icctv.php" },
     { "src": "/ilt20/(.*)", "dest": "/api/ilt20/master.php" },
+    { "src": "/(.*)", "dest": "/api/$1" },
     { "handle": "filesystem" }, 
     { "src": "/(.*)", "status": 404, "dest": "/Errors/404.html" },
     { "src": "/(.*)", "status": 403, "dest": "/Errors/403.html" }
