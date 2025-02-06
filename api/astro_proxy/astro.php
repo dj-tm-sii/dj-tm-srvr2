@@ -28,7 +28,7 @@ $cntnttpe = curl_resp($surl, "RHDR", "", "", "", "content-type");
 header("Content-Type: ".$cntnttpe);
 header("access-control-allow-origin: *");
 
-echo curl_resp($url, "RBD");
+echo curl_resp($surl, "RBD");
 
 }else{
 http_response_code(404);
