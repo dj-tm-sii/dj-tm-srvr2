@@ -23,7 +23,7 @@ if(!empty($slg)){
 
 $surl = "https://linearjitp-playback.astro.com.my/dash-wv/dashiso/2504/".$slg;
 
-$cntnttpe = curl_resp($url, "RHDR", "", "", "", "content-type");
+$cntnttpe = curl_resp($surl, "RHDR", "", "", "", "content-type");
 
 header("Content-Type: ".$cntnttpe);
 header("access-control-allow-origin: *");
