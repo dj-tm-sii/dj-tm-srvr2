@@ -297,7 +297,7 @@ echo  '#EXTM3U
 #EXT-X-VERSION:3
 
 # AUDIO groups
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID='.'"audio-tag",LANGUAGE="'.$lang.' [😎@DJ™&🤓@AVN™]",NAME="'.$lang.' [😎@DJ™&🤓@AVN™]",DEFAULT=YES,AUTOSELECT=YES,CHANNELS="2"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID='.'"audio-tag",LANGUAGE="'.$lang.' [😎@DJ™&🤓@AVN™]",NAME="'.$lang.' [😎@DJ™&🤓@AVN™]",DEFAULT=YES,AUTOSELECT=YES,CHANNELS="2",URI="'.$url.'/master_apmf_7.m3u8"
 
 # variants
 #EXT-X-INDEPENDENT-SEGMENTS
@@ -314,8 +314,7 @@ echo  '#EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=6318400,AVERAGE-BANDWIDTH=4910400,CODECS="hvc1.1.6.L120.B0,mp4a.40.2",RESOLUTION=1920x1080,FRAME-RATE=25.000,AUDIO="audio-tag"
 '.$url.'/master_ap_1080_5.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=12478400,AVERAGE-BANDWIDTH=10630400,CODECS="hvc1.1.6.L150.B0,mp4a.40.2",RESOLUTION=3840x2160,FRAME-RATE=25.000,AUDIO="audio-tag"
-'.$url.'/master_ap_2160_6.m3u8
-#EXT-X-MEDIA:TYPE=AUDIO,LANGUAGE="eng",NAME="Alternate Audio",AUTOSELECT=YES,DEFAULT=YES,CHANNELS="2",GROUP-ID="audio-tag",URI="'.$url.'/master_apmf_7.m3u8"';
+'.$url.'/master_ap_2160_6.m3u8';
 
 }else{
 http_response_code(403);
